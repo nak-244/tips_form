@@ -11,7 +11,7 @@ G Suiteを利用されている方であれば、アンケート収集や申し�
 
 ## doPostによる方法
 ### フォーム画面
-https://script.google.com/macros/s/AKfycbwvNsTpF5-yq9IH6_kFutV_JjUAU1-uojNZghC-CfW4x9lov389/exec
+[sampleURL][https://script.google.com/macros/s/AKfycbwvNsTpF5-yq9IH6_kFutV_JjUAU1-uojNZghC-CfW4x9lov389/exec]
 シンプルに、テキストボックス、ラジオボタン、チェックボックスの３つの質問を用意しています。
 
 ### スプレッドシート
