@@ -27,21 +27,21 @@ https://docs.google.com/spreadsheets/d/10iP5jXSHMMU3RBv-Snl8whxksgaRx4zP1SC2oXD6
 <html>
 
 <head>
-<base target=”_top”>
+<base target="_top">
 </head>
 
 <body>
 <h1>doPostによる方法</h1>
-<form method=”post” action=”https://script.google.com/macros/s/AKfycbwvNsTpF5-yq9IH6_kFutV_JjUAU1-uojNZghC-CfW4x9lov389/exec”>
-氏名：<input type=”text” name=”name”><br>
+<form method="post" action="https://script.google.com/macros/s/AKfycbwvNsTpF5-yq9IH6_kFutV_JjUAU1-uojNZghC-CfW4x9lov389/exec">
+氏名：<input type="text" name="name"><br>
 性別：
-<input type=”radio” name=”gender” value=”男性”>男性
-<input type=”radio” name=”gender” value=”女性”>女性<br>
+<input type="radio" name="gender" value="男性">男性
+<input type="radio" name="gender" value="女性">女性<br>
 好きな動物：
-<input type=”checkbox” name=”animal” value=”犬”>いぬ
-<input type=”checkbox” name=”animal” value=”猫”>ねこ
-<input type=”checkbox” name=”animal” value=”うさぎ”>うさぎ<br>
-<input type=”submit” value=”送信する”>
+<input type="checkbox" name="animal" value="犬">いぬ
+<input type="checkbox" name="animal" value="猫">ねこ
+<input type="checkbox" name="animal" value="うさぎ">うさぎ<br>
+<input type="submit" value="送信する">
 </form>
 </body>
 
