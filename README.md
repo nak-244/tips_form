@@ -58,3 +58,47 @@ index.htmlでは、ユーザーがブラウザで表示し、入力する部分�
 `<form method="post" action="https://script.google.com/macros/s/AKfycbwvNsTpF5-yq9IH6_kFutV_JjUAU1-uojNZghC-CfW4x9lov389/exec">`
 
 action属性として設定されているURLの文字列は、このWEBアプリケーションのURLそのままです。上記スプレッドシートをコピーして利用されている方であれば、スクリプトエディタから「公開」→「Webアプリケーションとして導入」→「導入」で表示されるURLをコピーしてこの部分に置換してください。
+
+### コード.gs
+~~~javascript
+function doGet() {
+
+var toppage=HtmlService.createTemplateFromFile("index");
+
+return toppage.evaluate();
+
+}
+
+function doPost(postdata){
+
+var sh=SpreadsheetApp.getActiveSpreadsheet().getActiveSheet();
+var time=new Date();
+
+var name=postdata.parameters.name.toString();
+var gender=postdata.parameters.gender.toString();
+var animal=postdata.parameters.animal.toString();
+
+sh.appendRow([time,name,gender,animal]);
+
+var resultpage=HtmlService.createTemplateFromFile("result");
+return resultpage.evaluate();
+}
+~~~
+このWebアプリケーションのURLにアクセスされた時にはじめに実行されるのがdoGet()関数です。"index"というファイル名を持つHTMLファイルからテンプレートを生成し、ブラウザに表示させています。
+
+また、フォームの送信ボタン`<input type="submit">`がクリックされた時に実行されるのがdoPost関数です。フォームからの返り値を引数として"postdata"で受け取っています。postdataはオブジェクト型であるため、toStringで文字列型に変換しています。その後、記録したいスプレッドシートに対してappendRowで最終行に追加する形で、フォームの回答内容を記録しています。スプレッドシートに記録した後、"result"という名前のHTMLファイルを生成し、ブラウザに表示させます。
+
+### result.html
+~~~html
+<!DOCTYPE html>
+<html>
+<head>
+<base target="_top">
+</head>
+<body>
+送信が完了しました。<br><br>
+<a href="https://script.google.com/macros/s/AKfycbwvNsTpF5-yq9IH6_kFutV_JjUAU1-uojNZghC-CfW4x9lov389/exec">もう一度回答する</a>
+</body>
+</html>
+~~~
+フォーム送信が完了した後にユーザーのブラウザに表示される画面が表現されています。今回はシンプルに、送信が完了した旨のメッセージと、サイド回答したい場合のリンク先を設置しております。
