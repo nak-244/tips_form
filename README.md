@@ -47,3 +47,10 @@ https://docs.google.com/spreadsheets/d/10iP5jXSHMMU3RBv-Snl8whxksgaRx4zP1SC2oXD6
 
 </html>
 ~~~
+index.htmlでは、ユーザーがブラウザで表示し、入力する部分が表現されています。
+
+<input>タグがいくつか設置されており、それぞれの質問を受け付けるボックスやボタンとなっています。また、name属性には各質問ごとに名称が付与されており、スプレッドシートに書き込む際に利用します。
+
+<input type="submit">がクリックされると、<form>の中の情報が送信されます。
+
+また、<form>タグには以下のようにaction属性が付与されています。
