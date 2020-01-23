@@ -15,7 +15,7 @@ G Suiteを利用されている方であれば、アンケート収集や申し�
 シンプルに、テキストボックス、ラジオボタン、チェックボックスの３つの質問を用意しています。
 
 ### スプレッドシート
-https://docs.google.com/spreadsheets/d/10iP5jXSHMMU3RBv-Snl8whxksgaRx4zP1SC2oXD6GtU/edit#gid=0
+[sampleURL](https://docs.google.com/spreadsheets/d/10iP5jXSHMMU3RBv-Snl8whxksgaRx4zP1SC2oXD6GtU/edit#gid=0)
 フォームで入力された３つの質問に加え、入力された時間が記入されるようになっています。
 
 ## 解説
