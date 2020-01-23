@@ -54,3 +54,7 @@ index.htmlでは、ユーザーがブラウザで表示し、入力する部分�
 `<input type="submit">`がクリックされると、`<form>`の中の情報が送信されます。
 
 また、`<form>`タグには以下のようにaction属性が付与されています。
+
+><form method=”post” action=”https://script.google.com/macros/s/AKfycbwvNsTpF5-yq9IH6_kFutV_JjUAU1-uojNZghC-CfW4x9lov389/exec”>
+
+action属性として設定されているURLの文字列は、このWEBアプリケーションのURLそのままです。上記スプレッドシートをコピーして利用されている方であれば、スクリプトエディタから「公開」→「Webアプリケーションとして導入」→「導入」で表示されるURLをコピーしてこの部分に置換してください。
